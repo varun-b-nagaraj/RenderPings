@@ -1,6 +1,6 @@
-# VercelPings
+# RenderPings
 
-Simple Vercel Cron Job that pings a list of URLs every 5 minutes.
+Simple GitHub Actions cron that pings a list of URLs every 5 minutes.
 
 ## Edit targets
 
@@ -28,8 +28,11 @@ npm install
 npm run ping
 ```
 
-## Deploy on Vercel
+## Run on GitHub (recommended)
 
-This repo includes `vercel.json` with a Cron Job scheduled for every 5 minutes (`*/5 * * * *`) that hits `GET /api/ping`.
+This repo includes a scheduled GitHub Actions workflow at `.github/workflows/ping.yml` that runs every 5 minutes (`*/5 * * * *`).
 
-Note: Vercel cron schedules use UTC.
+Notes:
+
+- GitHub scheduled workflows use UTC.
+- Schedules are best-effort; runs can be delayed.
