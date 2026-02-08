@@ -1,0 +1,10 @@
+{
+  "timeoutMs": 60000,
+  "targets": [
+    "https://koreos-mcp-backend.onrender.com",
+    "https://mcp-client-4sdk.onrender.com",
+    "https://hr-check-in.onrender.com",
+    "https://hacapi-hh.onrender.com",
+    "https://inventory-backend-yvfp.onrender.com"
+  ]
+}
