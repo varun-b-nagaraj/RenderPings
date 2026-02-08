@@ -1,6 +1,6 @@
-# RenderPings
+# VercelPings
 
-Simple Render Cron Job that pings a list of URLs every 5 minutes.
+Simple Vercel Cron Job that pings a list of URLs every 5 minutes.
 
 ## Edit targets
 
@@ -28,8 +28,8 @@ npm install
 npm run ping
 ```
 
-## Deploy on Render
+## Deploy on Vercel
 
-This repo includes `render.yaml` with a Cron Job scheduled for every 5 minutes (`*/5 * * * *`).
+This repo includes `vercel.json` with a Cron Job scheduled for every 5 minutes (`*/5 * * * *`) that hits `GET /api/ping`.
 
-Note: Render cron schedules use UTC.
+Note: Vercel cron schedules use UTC.

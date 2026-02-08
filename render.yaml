@@ -1,8 +1,0 @@
-services:
-  - type: cron
-    name: render-pings
-    runtime: node
-    schedule: "*/5 * * * *"
-    buildCommand: npm ci
-    startCommand: npm run ping
-
